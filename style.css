@@ -20,6 +20,8 @@ body{
     font-family: Outfit;
     align-items: flex-start;
     overflow:hidden;
+    
+    box-shadow:  0px 25px 0px 20px 	hsl(217, 55%, 10%),0px 25px 0px 50px 	hsl(216, 57%, 11%);
 }
 .icons{
     width: 90%;
