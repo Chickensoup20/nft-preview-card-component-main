@@ -5,13 +5,14 @@ body{
     background-color: hsl(217, 54%, 11%);
 }
 .base{
+    pointer-events: none;
     background-color: hsl(216, 50%, 16%);
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     justify-content: center;
     width: 20%;
@@ -28,21 +29,70 @@ body{
     align-self: center;
 }
 h1{
+    transition: .5s ease;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    pointer-events: auto;
 }
 
 p{
     color: hsl(215, 51%, 70%);
     font-size: 18px;
     font-weight: 400;
-    
-}
-.Creation{
-    padding-top: 4%;
 }
 .description{
     margin: 2%;
+    padding-right: 3%;
+    margin-left: 0px;
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+}
+.eye{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    margin: 0px;
+}
+.parent{
+    position: relative;
+    pointer-events: none;
+}
+.overlay:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+
+h1.heading:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+span.aut:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+span{
+    transition: .5s ease;
+    color: hsl(0, 0%, 100%);
+    pointer-events: auto;
 }
 img{
     border-radius: 10px ;
@@ -50,8 +100,9 @@ img{
     height: auto;
     object-fit: contain;
 }
+
 hr{
-    width: 95%;
+    width: 99%;
     color: hsl(215, 32%, 27%);
     border: 1px hsl(215, 32%, 27%);
     border-color: hsl(215, 32%, 27%);
@@ -61,20 +112,21 @@ hr{
 .author{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin-bottom: -5%;
     
 }
 .avatar{
     width: 10%;
-    margin: 7%;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10%;
     border:1px solid hsl(0, 0%, 100%);
-    border-radius: 5000px;
-    -webkit-border-radius: 5000px;
-    -moz-border-radius: 5000px;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
-.name{
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-}
+
 .eth{
     font-weight: 300;
     color: hsl(178, 100%, 50%);
